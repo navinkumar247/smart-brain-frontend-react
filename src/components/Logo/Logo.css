@@ -1,0 +1,10 @@
+.Tilt {
+    background: linear-gradient(146deg, rgb(171, 252, 255) 0%, rgb(55, 255, 132) 100% );
+    position: absolute;
+  }
+
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
