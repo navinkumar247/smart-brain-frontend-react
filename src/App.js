@@ -68,7 +68,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input})
-    fetch('http://127.0.0.1:3000/image', {
+    fetch('https://facialrecognition-api.herokuapp.com/image', {
       method: 'post',
       headers: {'content-type': 'application/json'},
       body: JSON.stringify({
@@ -79,7 +79,7 @@ class App extends Component {
       .then(response => this.displayFaceBox(this.calculateFaceLocation(response)))
       .catch(error => console.log(error));
 
-    fetch('http://127.0.0.1:3000/image', {
+    fetch('https://facialrecognition-api.herokuapp.com/image', {
       method: 'put',
       headers: {'content-type': 'application/json'},
       body: JSON.stringify({

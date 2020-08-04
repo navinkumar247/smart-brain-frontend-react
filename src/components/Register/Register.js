@@ -34,7 +34,7 @@ class Register extends React.Component {
         if (this.state.email === '' || !this.state.email.includes('@') || this.state.name === '' || this.state.password === '' ){
             alert('Invalid details');
         } else {
-            const resp = await fetch('http://127.0.0.1:3000/register', {
+            const resp = await fetch('https://facialrecognition-api.herokuapp.com/register', {
             method: 'post',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify({
